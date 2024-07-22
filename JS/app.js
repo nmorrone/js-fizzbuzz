@@ -19,19 +19,24 @@ for (let counter = 1; counter <= 100; counter++) {
 
     //aggiungo le condizioni indicate
 
+    //condizione multiplo di 3 e 5
+    /* inserisco 3 e 5 prima delle condizioni singole perché
+    sennò mi prende in automatico le singole prima e non 
+    mi stamperà FizzBuzz mai */
 
-    //condizione multiplo di 3
-    if (resto == 0) {
+    if ((resto == 0) && (restoCinque == 0)) {
 
-        console.log('Fizz')
+        console.log('FizzBuzz')
     }
 
-
+    //successivamente inserisco quelle singole
+    //condizione multiplo di 3
+    else if (resto == 0) {
+        console.log('Fizz')
+    }
     //condizione multiplo di 5
     else if (restoCinque == 0) {
-
         console.log('Buzz')
-
     }
 
     //stampo in console
